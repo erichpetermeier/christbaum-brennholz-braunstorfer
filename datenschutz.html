@@ -1,137 +1,397 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Datenschutzerklärung – Christbaum und Brennholzverkauf Braunstorfer</title>
-    <meta charset="utf-8">
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(207, 212, 205);
+            color: rgb(14, 71, 21);
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        .page {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            padding: 15px;
+        }
+
         .headline {
             background: rgb(14, 71, 21);
             color: rgb(207, 212, 205);
             border-radius: 20px;
-            padding: 10px;
+            padding: 15px;
         }
 
-        .body {
-            background: rgb(207,212,205);
-            font-family: sans-serif;
+        .main-title {
+            font-size: 32px;
         }
 
         .headline2 {
-            color: rgb(14,71,21);
+            color: rgb(14, 71, 21);
+            font-size: 27px;
+            margin: 20px 0 15px;
         }
 
         .line {
-            background: rgb(14,71,21);
-            padding: 1px;
+            background: rgb(14, 71, 21);
+            border: none;
+            height: 3px;
+            margin: 28px 0;
         }
 
         .text {
-            background: rgb(14,71,21);
-            color: rgb(207,212,205);
-            border-radius: 10px;
+            background: rgb(14, 71, 21);
+            color: rgb(207, 212, 205);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .back {
+            display: inline-block;
+            background: rgb(14, 71, 21);
+            color: rgb(207, 212, 205);
+            text-decoration: none;
+            border-radius: 15px;
+            padding: 12px 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .back:hover {
+            color: rgb(30, 255, 0);
+        }
+
+        #versionAuswahl {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgb(207, 212, 205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px;
         }
+
+        .auswahl-box {
+            width: 100%;
+            max-width: 500px;
+            background: rgb(14, 71, 21);
+            color: rgb(207, 212, 205);
+            border-radius: 25px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+        }
+
+        .auswahl-box h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .versions-button {
+            width: 100%;
+            border: none;
+            border-radius: 15px;
+            padding: 17px 10px;
+            margin: 7px 0;
+            background: rgb(207, 212, 205);
+            color: rgb(14, 71, 21);
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .versions-button:hover {
+            background: white;
+        }
+
+        body.laptop .page {
+            max-width: 1100px;
+            padding: 25px;
+        }
+
+        body.laptop .text {
+            padding: 30px 60px;
+        }
+
+        body.handy {
+            font-size: 16px;
+        }
+
+        body.handy .page {
+            padding: 8px;
+        }
+
+        body.handy .main-title {
+            font-size: 23px;
+            line-height: 1.3;
+        }
+
+        body.handy .headline2 {
+            font-size: 22px;
+        }
+
+        body.handy .text {
+            padding: 18px 15px;
+            border-radius: 17px;
+            text-align: left;
+        }
+
+        body.handy .back {
+            width: 100%;
+            margin: 8px 0;
+        }
+
     </style>
+
 </head>
 
-<body class="body">
+<body>
 
-<div align="center">
-    <h1 class="headline">Datenschutzerklärung</h1>
+
+<div id="versionAuswahl">
+
+    <div class="auswahl-box">
+
+        <h1>Willkommen!</h1>
+
+        <p>
+            Wie möchtest du die Website anzeigen?
+        </p>
+
+        <button
+            class="versions-button"
+            onclick="setVersion('laptop')">
+
+            Laptop / PC
+
+        </button>
+
+        <button
+            class="versions-button"
+            onclick="setVersion('handy')">
+
+            Handy
+
+        </button>
+
+    </div>
+
 </div>
 
-<hr class="line">
 
-<div align="center">
-    <h2 class="headline2">1. Verantwortlicher</h2>
+<div class="page">
 
-    <p class="text">
-        <strong>Josef Braunstorfer</strong><br><br>
-        Hölle 18<br>
-        2811 Wiesmath<br>
-        Österreich<br><br>
+    <div align="center">
 
-        Telefon: +43 676 964 9732<br>
-        E-Mail: braunstorfer.josef@gmail.com
-    </p>
+        <h1 class="headline main-title">
+            Datenschutzerklärung
+        </h1>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <h2 class="headline2">
+            1. Verantwortlicher
+        </h2>
+
+        <p class="text">
+
+            <strong>Josef Braunstorfer</strong><br><br>
+
+            Hölle 18<br>
+            2811 Wiesmath<br>
+            Österreich<br><br>
+
+            Telefon: +43 676 964 9732<br>
+            E-Mail: braunstorfer.josef@gmail.com
+
+        </p>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <h2 class="headline2">
+            2. Besuch der Website
+        </h2>
+
+        <p class="text">
+
+            Beim Aufruf dieser Website können technisch notwendige
+            Daten verarbeitet werden, die für die Bereitstellung und
+            den sicheren Betrieb der Website erforderlich sind.
+
+            Dazu können insbesondere IP-Adresse, Datum und Uhrzeit
+            des Zugriffs, verwendeter Browser und Informationen über
+            das verwendete Endgerät gehören.
+
+        </p>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <h2 class="headline2">
+            3. Kontaktaufnahme
+        </h2>
+
+        <p class="text">
+
+            Wenn Sie telefonisch oder per E-Mail Kontakt mit
+            Josef Braunstorfer aufnehmen, werden die dabei
+            übermittelten personenbezogenen Daten ausschließlich
+            zur Bearbeitung Ihrer Anfrage und zur weiteren
+            Kommunikation verwendet.
+
+        </p>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <h2 class="headline2">
+            4. Google Maps
+        </h2>
+
+        <p class="text">
+
+            Auf dieser Website wird Google Maps verwendet, um den
+            Standort von Josef Braunstorfer anzuzeigen und Besuchern
+            die Anfahrt zu erleichtern.
+
+            <br><br>
+
+            Anbieter ist Google Ireland Limited, Gordon House,
+            Barrow Street, Dublin 4, Irland.
+
+            <br><br>
+
+            Beim Aufruf der Google-Maps-Karte kann eine Verbindung
+            zu Servern von Google hergestellt werden. Dabei können
+            unter anderem die IP-Adresse sowie technische
+            Informationen über das verwendete Gerät verarbeitet
+            werden.
+
+            <br><br>
+
+            Die Nutzung von Google Maps erfolgt zur Darstellung
+            des Standorts und zur Erleichterung der Anfahrt.
+
+        </p>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <h2 class="headline2">
+            5. Ihre Rechte
+        </h2>
+
+        <p class="text">
+
+            Sie haben nach Maßgabe der gesetzlichen Bestimmungen
+            insbesondere das Recht auf Auskunft über Ihre
+            gespeicherten personenbezogenen Daten, Berichtigung
+            unrichtiger Daten, Löschung Ihrer Daten, Einschränkung
+            der Verarbeitung sowie Widerspruch gegen bestimmte
+            Verarbeitungen.
+
+            <br><br>
+
+            Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer
+            personenbezogenen Daten gegen Datenschutzrecht verstößt,
+            können Sie sich bei der österreichischen
+            Datenschutzbehörde beschweren.
+
+        </p>
+
+    </div>
+
+
+    <hr class="line">
+
+
+    <div align="center">
+
+        <a href="index.html" class="back">
+            Zurück zur Startseite
+        </a>
+
+    </div>
+
 </div>
 
-<hr class="line">
 
-<div align="center">
-    <h2 class="headline2">2. Besuch der Website</h2>
+<script>
 
-    <p class="text">
-        Beim Aufruf dieser Website können technisch notwendige Daten verarbeitet
-        werden, die für die Bereitstellung und den sicheren Betrieb der Website
-        erforderlich sind. Dazu können insbesondere IP-Adresse, Datum und
-        Uhrzeit des Zugriffs, verwendeter Browser und Informationen über das
-        verwendete Endgerät gehören.
-    </p>
-</div>
+    function setVersion(version) {
 
-<hr class="line">
+        document.body.classList.remove("laptop");
+        document.body.classList.remove("handy");
 
-<div align="center">
-    <h2 class="headline2">3. Kontaktaufnahme</h2>
+        document.body.classList.add(version);
 
-    <p class="text">
-        Wenn Sie telefonisch oder per E-Mail Kontakt mit Josef Braunstorfer
-        aufnehmen, werden die dabei übermittelten personenbezogenen Daten
-        ausschließlich zur Bearbeitung Ihrer Anfrage und zur weiteren
-        Kommunikation verwendet.
-    </p>
-</div>
+        document.getElementById("versionAuswahl").style.display = "none";
 
-<hr class="line">
+        localStorage.setItem("websiteVersion", version);
 
-<div align="center">
-    <h2 class="headline2">4. Google Maps</h2>
+    }
 
-    <p class="text">
-        Auf dieser Website wird Google Maps verwendet, um den Standort von
-        Josef Braunstorfer anzuzeigen und Besuchern die Anfahrt zu erleichtern.
-        <br><br>
 
-        Anbieter ist Google Ireland Limited, Gordon House, Barrow Street,
-        Dublin 4, Irland.
-        <br><br>
+    window.onload = function() {
 
-        Beim Aufruf der Google-Maps-Karte kann eine Verbindung zu Servern von
-        Google hergestellt werden. Dabei können unter anderem die IP-Adresse
-        sowie technische Informationen über das verwendete Gerät verarbeitet
-        werden.
-        <br><br>
+        let gespeicherteVersion =
+            localStorage.getItem("websiteVersion");
 
-        Die Nutzung von Google Maps erfolgt zur Darstellung des Standorts und
-        zur Erleichterung der Anfahrt.
-    </p>
-</div>
+        if (gespeicherteVersion) {
 
-<hr class="line">
+            setVersion(gespeicherteVersion);
 
-<div align="center">
-    <h2 class="headline2">5. Ihre Rechte</h2>
+        }
 
-    <p class="text">
-        Sie haben nach Maßgabe der gesetzlichen Bestimmungen insbesondere das
-        Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten,
-        Berichtigung unrichtiger Daten, Löschung Ihrer Daten, Einschränkung
-        der Verarbeitung sowie Widerspruch gegen bestimmte Verarbeitungen.
-        <br><br>
+    };
 
-        Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer
-        personenbezogenen Daten gegen Datenschutzrecht verstößt, können Sie
-        sich bei der österreichischen Datenschutzbehörde beschweren.
-    </p>
-</div>
+</script>
 
-<br><br>
-
-<div align="center">
-    <a href="index.html" class="headline2">← Zurück zur Startseite</a>
-</div>
 
 </body>
 </html>
