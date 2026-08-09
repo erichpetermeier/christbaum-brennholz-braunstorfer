@@ -23,16 +23,106 @@
             padding: 0;
             background: rgb(207, 212, 205);
             color: rgb(14, 71, 21);
-            font-family: sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
         }
 
         .page {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: auto;
-            padding: 15px;
+            padding: 18px;
         }
+
+
+        /* =========================
+           STARTSEITE / AUSWAHL
+           ========================= */
+
+        #versionAuswahl {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: rgb(207, 212, 205);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .welcome-box {
+            width: 100%;
+            max-width: 850px;
+            background: rgb(14, 71, 21);
+            color: rgb(207, 212, 205);
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .welcome-image {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .welcome-content {
+            padding: 30px 25px 35px;
+        }
+
+        .welcome-title {
+            font-size: 38px;
+            line-height: 1.2;
+            margin: 0 0 20px;
+        }
+
+        .welcome-line {
+            width: 90px;
+            height: 3px;
+            background: rgb(207, 212, 205);
+            border: none;
+            margin: 20px auto 25px;
+        }
+
+        .choice-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .versions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .versions-button {
+            flex: 1;
+            min-height: 65px;
+            border: 2px solid rgb(207, 212, 205);
+            border-radius: 15px;
+            background: rgb(207, 212, 205);
+            color: rgb(14, 71, 21);
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .versions-button:hover {
+            background: rgb(14, 71, 21);
+            color: rgb(207, 212, 205);
+            transform: translateY(-2px);
+        }
+
+
+        /* =========================
+           HAUPTDESIGN
+           ========================= */
 
         .headline {
             background: rgb(14, 71, 21);
@@ -42,20 +132,20 @@
         }
 
         .main-title {
-            font-size: 30px;
+            font-size: 34px;
             line-height: 1.25;
             margin: 10px 0 20px;
         }
 
         .headline2 {
             color: rgb(14, 71, 21);
-            font-size: 27px;
-            margin: 15px 0;
+            font-size: 28px;
+            margin: 18px 0;
         }
 
         .image1 {
             width: 100%;
-            max-width: 420px;
+            max-width: 450px;
             height: auto;
             display: block;
             margin: auto;
@@ -63,21 +153,29 @@
             border: 3px solid rgb(14, 71, 21);
         }
 
+
+        /* =========================
+           NAVIGATION
+           ========================= */
+
         .navigation {
             background: rgb(14, 71, 21);
-            border-radius: 15px;
+            border-radius: 18px;
             padding: 8px;
             margin-top: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
         }
 
         .navigation a {
             color: rgb(207, 212, 205);
             text-decoration: none;
-            display: block;
-            text-align: center;
             font-weight: bold;
-            font-size: 17px;
-            padding: 10px 5px;
+            font-size: 16px;
+            padding: 11px 15px;
             border-radius: 10px;
         }
 
@@ -85,18 +183,28 @@
             color: rgb(30, 255, 0);
         }
 
+
+        /* =========================
+           TRENNLINIEN
+           ========================= */
+
         .line {
             background: rgb(14, 71, 21);
             border: none;
             height: 3px;
-            margin: 28px 0;
+            margin: 30px 0;
         }
+
+
+        /* =========================
+           TEXT
+           ========================= */
 
         .text-box {
             background: rgb(14, 71, 21);
             color: rgb(207, 212, 205);
             border-radius: 20px;
-            padding: 20px;
+            padding: 25px 50px;
             text-align: center;
         }
 
@@ -104,24 +212,34 @@
             background: rgb(14, 71, 21);
             color: rgb(207, 212, 205);
             border-radius: 20px;
-            padding: 20px;
+            padding: 23px 35px;
             text-align: center;
-            line-height: 1.8;
+            font-size: 17px;
         }
+
+
+        /* =========================
+           CHRISTBAUM
+           ========================= */
 
         .christbaum {
             width: 160px;
             max-width: 60%;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin: 22px auto;
         }
+
+
+        /* =========================
+           KONTAKT
+           ========================= */
 
         .contact-box {
             background: rgb(14, 71, 21);
             color: rgb(207, 212, 205);
-            border-radius: 15px;
-            padding: 20px;
+            border-radius: 20px;
+            padding: 22px;
             text-align: center;
         }
 
@@ -139,18 +257,29 @@
             color: rgb(30, 255, 0);
         }
 
+
+        /* =========================
+           GOOGLE MAPS
+           ========================= */
+
         .iframe {
             width: 100%;
+            max-width: 800px;
             height: 300px;
             border: 0;
             border-radius: 20px;
             margin-top: 15px;
         }
 
+
+        /* =========================
+           BILDERGALERIE
+           ========================= */
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 16px;
             margin-top: 20px;
         }
 
@@ -161,7 +290,26 @@
             display: block;
             border-radius: 20px;
             border: 3px solid rgb(14, 71, 21);
+            transition: transform 0.2s;
         }
+
+        .gallery-image:hover {
+            transform: scale(1.02);
+        }
+
+
+        /* =========================
+           ABSCHLUSS
+           ========================= */
+
+        .slogan {
+            font-size: 30px;
+        }
+
+
+        /* =========================
+           FOOTER
+           ========================= */
 
         .footer {
             text-align: center;
@@ -177,6 +325,11 @@
         .footerlink:hover {
             color: rgb(30, 255, 0);
         }
+
+
+        /* =========================
+           ANSICHT WECHSELN
+           ========================= */
 
         .wechsel-container {
             text-align: center;
@@ -198,91 +351,9 @@
         }
 
 
-        /* AUSWAHLFENSTER */
-
-        #versionAuswahl {
-            position: fixed;
-            inset: 0;
-            z-index: 9999;
-            background: rgb(207, 212, 205);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .auswahl-box {
-            width: 100%;
-            max-width: 500px;
-            background: rgb(14, 71, 21);
-            color: rgb(207, 212, 205);
-            border-radius: 25px;
-            padding: 30px 20px;
-            text-align: center;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.25);
-        }
-
-        .auswahl-box h1 {
-            margin-top: 0;
-            font-size: 28px;
-        }
-
-        .versions-button {
-            width: 100%;
-            border: none;
-            border-radius: 15px;
-            padding: 17px 10px;
-            margin: 7px 0;
-            background: rgb(207, 212, 205);
-            color: rgb(14, 71, 21);
-            font-size: 18px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        .versions-button:hover {
-            background: white;
-        }
-
-
-        /* LAPTOP */
-
-        body.laptop .page {
-            max-width: 1100px;
-            padding: 25px;
-        }
-
-        body.laptop .main-title {
-            font-size: 34px;
-        }
-
-        body.laptop .navigation {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5px;
-        }
-
-        body.laptop .navigation a {
-            display: inline-block;
-            padding: 10px 15px;
-        }
-
-        body.laptop .text-box {
-            padding: 25px 60px;
-        }
-
-        body.laptop .offer-box {
-            padding: 25px 60px;
-        }
-
-        body.laptop .gallery {
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-        }
-
-
-        /* HANDY */
+        /* =========================
+           HANDY
+           ========================= */
 
         body.handy {
             font-size: 16px;
@@ -294,58 +365,33 @@
 
         body.handy .main-title {
             font-size: 24px;
-            padding: 15px 10px;
-        }
-
-        body.handy .image1 {
-            width: 96%;
-            border-radius: 18px;
-        }
-
-        body.handy .navigation {
-            margin-top: 18px;
-            padding: 7px;
-        }
-
-        body.handy .navigation a {
-            font-size: 16px;
-            padding: 11px 5px;
         }
 
         body.handy .headline2 {
             font-size: 23px;
-            margin: 18px 0 14px;
         }
 
         body.handy .text-box {
-            padding: 17px 15px;
-            border-radius: 17px;
+            padding: 18px 15px;
             text-align: left;
             line-height: 1.55;
         }
 
         body.handy .offer-box {
-            padding: 17px 13px;
-            border-radius: 17px;
+            padding: 18px 14px;
             line-height: 1.7;
-        }
-
-        body.handy .christbaum {
-            width: 145px;
         }
 
         body.handy .contact-box {
             padding: 17px 10px;
-            border-radius: 17px;
         }
 
         body.handy .iframe {
             height: 260px;
-            border-radius: 16px;
         }
 
         body.handy .gallery {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 8px;
         }
 
@@ -354,23 +400,65 @@
             border-width: 2px;
         }
 
+        body.handy .slogan {
+            font-size: 24px;
+        }
 
-        @media (max-width: 360px) {
 
-            body.handy .main-title {
-                font-size: 21px;
-            }
+        /* =========================
+           HANDY STARTFENSTER
+           ========================= */
 
-            body.handy .headline2 {
-                font-size: 21px;
-            }
+        body.handy-version #versionAuswahl {
+            padding: 12px;
+        }
 
-            body.handy .gallery {
+        body.handy-version .welcome-box {
+            border-radius: 22px;
+        }
+
+        body.handy-version .welcome-image {
+            height: 230px;
+        }
+
+        body.handy-version .welcome-content {
+            padding: 23px 16px 25px;
+        }
+
+        body.handy-version .welcome-title {
+            font-size: 27px;
+        }
+
+        body.handy-version .versions {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        body.handy-version .versions-button {
+            min-height: 58px;
+        }
+
+
+        /* =========================
+           KLEINE HANDYS
+           ========================= */
+
+        @media (max-width: 380px) {
+
+            .gallery {
                 grid-template-columns: 1fr;
             }
 
-            body.handy .gallery-image {
+            .gallery-image {
                 aspect-ratio: 4 / 3;
+            }
+
+            .welcome-title {
+                font-size: 24px;
+            }
+
+            .welcome-image {
+                height: 190px;
             }
 
         }
@@ -383,38 +471,62 @@
 <body>
 
 
-<!-- AUSWAHL LAPTOP / HANDY -->
+<!-- =========================
+     STARTAUSWAHL
+     ========================= -->
 
 <div id="versionAuswahl">
 
-    <div class="auswahl-box">
+    <div class="welcome-box">
 
-        <h1>Willkommen!</h1>
+        <img
+            src="IMG_1668.jpeg"
+            class="welcome-image"
+            alt="Christbaum und Brennholzverkauf Braunstorfer">
 
-        <p>
-            Wie möchtest du die Website anzeigen?
-        </p>
+        <div class="welcome-content">
 
-        <button
-            class="versions-button"
-            onclick="setVersion('laptop')">
+            <h1 class="welcome-title">
+                Willkommen bei<br>
+                Christbaum und Brennholzverkauf Braunstorfer
+            </h1>
 
-            Laptop / PC
+            <hr class="welcome-line">
 
-        </button>
+            <div class="choice-title">
+                Bitte wählen Sie Ihre Ansicht:
+            </div>
 
-        <button
-            class="versions-button"
-            onclick="setVersion('handy')">
+            <div class="versions">
 
-            Handy
+                <button
+                    class="versions-button"
+                    onclick="setVersion('laptop')">
 
-        </button>
+                    Laptop / PC
+
+                </button>
+
+                <button
+                    class="versions-button"
+                    onclick="setVersion('handy')">
+
+                    Handy
+
+                </button>
+
+            </div>
+
+        </div>
 
     </div>
 
 </div>
 
+
+<!-- =========================
+     HAUPTSEITE
+     ========================= -->
 
 <div class="page">
 
@@ -557,7 +669,6 @@
 
         <div class="contact-box">
 
-
             <div class="contact-item">
 
                 <a href="tel:026452272">
@@ -615,7 +726,6 @@
                 referrerpolicy="strict-origin-when-cross-origin">
             </iframe>
 
-
         </div>
 
     </div>
@@ -636,21 +746,13 @@
         <div class="gallery">
 
             <img src="IMG_1668.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1642.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1643.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1644.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1646.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1649.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1651.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1655.jpeg" class="gallery-image" alt="">
-
             <img src="IMG_1661.jpeg" class="gallery-image" alt="">
 
         </div>
@@ -667,7 +769,7 @@
 
         <i>
 
-            <h1 class="headline2">
+            <h1 class="headline2 slogan">
                 „Holz vom Sepp – warm und nett.“
             </h1>
 
@@ -739,14 +841,25 @@
 </div>
 
 
+<!-- =========================
+     JAVASCRIPT
+     ========================= -->
+
 <script>
 
     function setVersion(version) {
 
         document.body.classList.remove("laptop");
         document.body.classList.remove("handy");
+        document.body.classList.remove("handy-version");
 
         document.body.classList.add(version);
+
+        if (version === "handy") {
+
+            document.body.classList.add("handy-version");
+
+        }
 
         document.getElementById("versionAuswahl").style.display = "none";
 
@@ -775,6 +888,74 @@
 
 
     window.onload = function() {
+
+        let gespeicherteVersion =
+            localStorage.getItem("websiteVersion");
+
+        if (gespeicherteVersion) {
+
+            setVersion(gespeicherteVersion);
+
+        }
+
+    };
+
+</script>
+
+
+</body>
+
+</html>
+<!-- =========================
+     JAVASCRIPT
+     ========================= -->
+
+<script>
+
+    function setVersion(version) {
+
+        document.body.classList.remove("laptop");
+        document.body.classList.remove("handy");
+        document.body.classList.remove("handy-version");
+
+        document.body.classList.add(version);
+
+        if (version === "handy") {
+            document.body.classList.add("handy-version");
+        }
+
+        document.getElementById("versionAuswahl").style.display = "none";
+
+        localStorage.setItem("websiteVersion", version);
+
+    }
+
+
+    function wechseln() {
+
+        let aktuelleVersion;
+
+        if (document.body.classList.contains("handy")) {
+
+            aktuelleVersion = "laptop";
+
+        } else {
+
+            aktuelleVersion = "handy";
+
+        }
+
+        setVersion(aktuelleVersion);
+
+    }
+
+
+    window.onload = function() {
+
+        /*
+         * Beim ersten Besuch erscheint die Auswahl.
+         * Danach wird die zuletzt gewählte Ansicht gespeichert.
+         */
 
         let gespeicherteVersion =
             localStorage.getItem("websiteVersion");
