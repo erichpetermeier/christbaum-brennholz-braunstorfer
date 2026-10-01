@@ -285,7 +285,7 @@
 
         .gallery-image {
             width: 100%;
-            aspect-ratio: 1 / 1;
+            aspect-ratio: 4 / 3;
             object-fit: cover;
             display: block;
             border-radius: 20px;
@@ -547,8 +547,8 @@
     <div align="center">
 
         <img
-            src="unnamed.jpg" 
-            class="gallery-image"
+            src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnoOknlHEaFnJVa8qrQyNWv7kT2FK1NNFj0gKRG-YY051jGgtGXIUttwFyL75oNPxOS5mvdnKfiYp4vw4oMjRMdNmfjqxTQnHJ54VY-T_MQcVbQkc3ej9xihHBt3x_1gwHrUuVAafRqrWw=w408-h359-k-no"
+            class="image1"
             alt="Christbaum und Brennholzverkauf Braunstorfer">
 
     </div>
@@ -888,74 +888,6 @@
 
 
     window.onload = function() {
-
-        let gespeicherteVersion =
-            localStorage.getItem("websiteVersion");
-
-        if (gespeicherteVersion) {
-
-            setVersion(gespeicherteVersion);
-
-        }
-
-    };
-
-</script>
-
-
-</body>
-
-</html>
-<!-- =========================
-     JAVASCRIPT
-     ========================= -->
-
-<script>
-
-    function setVersion(version) {
-
-        document.body.classList.remove("laptop");
-        document.body.classList.remove("handy");
-        document.body.classList.remove("handy-version");
-
-        document.body.classList.add(version);
-
-        if (version === "handy") {
-            document.body.classList.add("handy-version");
-        }
-
-        document.getElementById("versionAuswahl").style.display = "none";
-
-        localStorage.setItem("websiteVersion", version);
-
-    }
-
-
-    function wechseln() {
-
-        let aktuelleVersion;
-
-        if (document.body.classList.contains("handy")) {
-
-            aktuelleVersion = "laptop";
-
-        } else {
-
-            aktuelleVersion = "handy";
-
-        }
-
-        setVersion(aktuelleVersion);
-
-    }
-
-
-    window.onload = function() {
-
-        /*
-         * Beim ersten Besuch erscheint die Auswahl.
-         * Danach wird die zuletzt gewählte Ansicht gespeichert.
-         */
 
         let gespeicherteVersion =
             localStorage.getItem("websiteVersion");
